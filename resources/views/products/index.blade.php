@@ -2,17 +2,18 @@
 <html>
 <head>
     <title>Products</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Продукты</h1>
-    <ul>
-        @foreach($products as $product)
-            <li>
-                <strong>{{ $product->name }}</strong><br>
-                Цена: {{ $product->cost }}<br>
-                Количество: {{ $product->amount }}
-            </li>
+
+<div class="container">
+    <div class="row">
+        @foreach ($products as $product)
+            @component('components.product-card', ['product' => $product])
+            @endcomponent
         @endforeach
-    </ul>
+    </div>
+</div>
+
 </body>
 </html>

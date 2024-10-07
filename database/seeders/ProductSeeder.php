@@ -13,8 +13,9 @@ class ProductSeeder extends Seeder
      */
     public function run(): void
     {
-        Product::create(['name' => 'Orange', 'cost' => 50000000, 'amount' => 27]);
-        Product::create(['name' => 'Banana', 'cost' => 7000000, 'amount' => 17]);
-        Product::create(['name' => 'Bread', 'cost' => 12000000, 'amount' => 0]);
+        Product::create(['name' => 'Orange', 'cost' => 500, 'amount' => 27]);
+        Product::create(['name' => 'Banana', 'cost' => 70, 'amount' => 17]);
+        Product::create(['name' => 'Bread', 'cost' => 120, 'amount' => 0]);
     }
 }
+
